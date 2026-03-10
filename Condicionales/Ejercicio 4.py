@@ -11,19 +11,18 @@ Trata de escribir tu propia versión antes de revisar la solución.'''
 
 edad = int(input("Ingrese su edad: "))
 
-if edad >= 0 or edad <= 99:
-    if edad < 6:
-        etapa = "Infacia"
-    elif edad < 12:
-        etapa = "Niñez"
-    elif edad < 20:
-        etapa = "Adolescencia"
-    elif edad < 25:
-        etapa = "Juventud"
-    elif edad < 60:
-        etapa = "adultez"
-    elif edad >= 60:
-        etapa = "vejez"
-    print(f"A sus {edad} usted está en la etapa de {etapa})
+if edad < 0:
+    print("Edad inválida")
+elif edad < 6:
+    print("Infancia")
+elif edad < 12:
+    print("Niñez")
+elif edad < 20:
+    print("Adolescencia")
+elif edad < 25:
+    print("Juventud")
+elif edad < 60:
+    print("Adultez")
 else:
+    print("Ancianidad / Vejez")
 
