@@ -17,7 +17,7 @@ Inicio
         Leer distancia
         Leer tipo_viento
 
-        consumo_tramo = calcular_consumo(distancia, CONSUMO_BASE, tipo_viento)
+        consumo_tramo = calcular_consumo(distancia, CONSUMO_BASE, tipo_viento) #Hecho con IA
 
         combustible_proyectado = combustible_restante - consumo_tramo
 
