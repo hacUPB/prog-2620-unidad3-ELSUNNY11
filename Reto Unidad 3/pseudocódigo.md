@@ -51,14 +51,14 @@ Fin
 Función calcular_consumo(distancia, consumo_base, tipo_viento)
 
     Si tipo_viento = "headwind" Entonces
-        factor_viento <- 1.14
+        factor_viento = 1.14
     Sino Si tipo_viento = "tailwind" Entonces
-        factor_viento <- 0.91
+        factor_viento = 0.91
     Sino
-        factor_viento <- 1.00
+        factor_viento = 1.00
     Fin Si
 
-    consumo <- distancia * consumo_base * factor_viento
+    consumo = distancia * consumo_base * factor_viento
 
     Retornar consumo
 
