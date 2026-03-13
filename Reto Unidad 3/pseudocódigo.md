@@ -6,9 +6,9 @@ Inicio
     Leer combustible_inicial
     Leer num_tramos
 
-    combustible_restante <- combustible_inicial
-    tramo <- 1
-    estado_vuelo <- "En ruta"
+    combustible_restante = combustible_inicial
+    tramo = 1
+    estado_vuelo = "En ruta"
 
     Mientras tramo <= num_tramos Hacer
 
