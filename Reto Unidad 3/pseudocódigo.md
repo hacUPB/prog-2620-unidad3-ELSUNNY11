@@ -12,7 +12,7 @@ Inicio
 
     Mientras tramo <= num_tramos Hacer
 
-        Mostrar "Tramo ", tramo
+        Mostrar "Tramo ", tramo(variable)
 
         Leer distancia
         Leer tipo_viento
@@ -21,8 +21,8 @@ Inicio
 
         combustible_proyectado = combustible_restante - consumo_tramo
 
-        Mostrar "Consumo estimado del tramo: ", consumo_tramo
-        Mostrar "Combustible proyectado: ", combustible_proyectado
+        Mostrar "Consumo estimado del tramo: ", consumo_tramo (variable)
+        Mostrar "Combustible proyectado: ", combustible_proyectado (variable)
 
         Si combustible_proyectado < RESERVA_MINIMA Entonces
             Mostrar "ALERTA CRÍTICA"
