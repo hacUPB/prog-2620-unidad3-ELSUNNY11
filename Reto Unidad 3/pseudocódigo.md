@@ -17,9 +17,9 @@ Inicio
         Leer distancia
         Leer tipo_viento
 
-        consumo_tramo <- calcular_consumo(distancia, CONSUMO_BASE, tipo_viento)
+        consumo_tramo = calcular_consumo(distancia, CONSUMO_BASE, tipo_viento)
 
-        combustible_proyectado <- combustible_restante - consumo_tramo
+        combustible_proyectado = combustible_restante - consumo_tramo
 
         Mostrar "Consumo estimado del tramo: ", consumo_tramo
         Mostrar "Combustible proyectado: ", combustible_proyectado
@@ -28,15 +28,15 @@ Inicio
             Mostrar "ALERTA CRÍTICA"
             Mostrar "Combustible por debajo de la reserva mínima"
             Mostrar "Abortar ruta y desviar al aeropuerto alterno más cercano"
-            estado_vuelo <- "Desviado a alterno"
+            estado_vuelo = "Desviado a alterno"
             Salir del ciclo
         Si no
-            combustible_restante <- combustible_proyectado
+            combustible_restante = combustible_proyectado
             Mostrar "Tramo completado"
             Mostrar "Combustible restante: ", combustible_restante
         Fin Si
 
-        tramo <- tramo + 1
+        tramo = tramo + 1
 
     Fin Mientras
 
